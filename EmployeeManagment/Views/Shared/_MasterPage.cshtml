@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employee Managment System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar-inverse .navbar-nav>li>a {
+    color: white !important;
+    font-weight:bold;
+}
+    </style>
+  <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="@Url.Action("Index","Department")">Department</a></li>
+                <li><a href="@Url.Action("Index","Employee")">Employee</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

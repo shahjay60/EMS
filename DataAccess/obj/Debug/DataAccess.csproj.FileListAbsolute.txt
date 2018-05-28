@@ -1,0 +1,10 @@
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\bin\Debug\DataAccess.dll
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\bin\Debug\DataAccess.pdb
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\obj\Debug\DataAccess.dll
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\obj\Debug\DataAccess.pdb
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\bin\Debug\DataAccess.dll.config
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\bin\Debug\EntityFramework.dll
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\bin\Debug\EntityFramework.xml
+D:\jay\EmployeeMang\EmployeeManagment\DataAccess\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,58 @@
+﻿@model List<DataAccess.tblDepartment>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MasterPage.cshtml";
+}
+<script src="~/Content/Js/DepartmentCRUD.js"></script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="usr">Department Name:</label>
+                <input type="text" class="form-control" id="txtDeptName" required>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="form-group pull-right">
+                <a href="#" class="btn btn-success" style="margin-top: 23px;" id="btnSave">Save</a>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="hdnId" value="0" />
+    <div class="row">
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th>Department Name</th>
+                    <th style="text-align: center;">Edit</th>
+                    <th style="text-align: center;">Delete</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count != 0)
+                {
+                    foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td style="text-align: center;"><a href="#" onclick="fnGetDataById(@item.Id)"><i class="fa fa-pencil"></i></a></td>
+                        <td style="text-align: center;"><a href="#" onclick="fnDeleteById(@item.Id)"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+
+                    </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3" style="text-align: center;">No Data Available</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
